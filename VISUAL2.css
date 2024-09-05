@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(69, 133, 111);
+    margin: .5rem;
+}
+
+#gible {
+    background-color: rgb(252, 252, 252);
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-style: italic;
+    font-family:  Helvetica;
+    height: 40px;
+}
+
+li{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+}
+
+h3{
+    margin: 3rem;
+}
+
+.gibbite{
+    width: 90px;
+    height: 100px;
+    position: absolute;
+    left: 90%;
+    top: 0;
+}
+
+#pw{
+    width: 150px;
+    height: 145px;
+    border-radius: 50%;
+    border: solid rgb(69, 133, 111);
+    box-shadow: 0px 0px 22px 10px white;
+    position: absolute;
+    right: 90%;
+    top:  0; 
+}
+
+p, .f1{
+    font-family: arial;
+    font-style: normal;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: aqua;
+}
+
+.pikachu{
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 350px;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+button:active{
+    background-color: rgb(69, 133, 111);;
+}
+
+.omen{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    font-family: Tahoma;
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.seiya{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(252, 252, 252);
+    padding-bottom: 1rem;
+}
+
+#viper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4rem;
+    position: relative;
+}
+
+#madara{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+}
+
+.omen2,
+.omen1,
+.omen3{
+border-radius: 50%;
+background-color: rgb(73, 70, 70);
+padding: .5rem;
+}
+
+section{
+    display: flex;
+    justify-content: center ;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    color: black;
+    font-size: 1.5rem;
+}
+
+#karma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color:white;
+    padding: 2rem;
+    margin: 0;
+}
+
+iframe{
+    border: solid rgb(69, 133, 111);
+    box-shadow: 0px 0px 22px 4px rgb(0, 0, 0);
+}
+
+#dialga{
+    background-color:  rgb(73, 70, 70);
+    border-radius: 50%;
+}
+
+#palkia{
+    padding: 0.2rem;
+}
+
+span{
+    color:  rgb(69, 133, 111);
+}
