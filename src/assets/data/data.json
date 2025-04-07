@@ -1,0 +1,42 @@
+[
+    {
+        "name": "HTML",
+        "level": "Básico",
+        "icon": "assets/images/icon/html.png"
+    },
+    {
+        "name": "CSS",
+        "level": "Básico",
+        "icon": "assets/images/icon/css.png"
+    },
+    {
+        "name": "JavaScript",
+        "level": "Básico",
+        "icon":"assets/images/icon/javascript.png"
+    },
+    {
+        "name": "Python",
+        "level": "Básico",
+        "icon": "assets/images/icon/python.png"
+    },
+    {
+        "name": "MYSQL",
+        "level": "Básico",
+        "icon": "assets/images/icon/mysql.png"
+    },
+    {
+        "name": "Node.Js",
+        "level": "Básico",
+        "icon":"assets/images/icon/node-js.png"
+    },
+    {
+        "name": "Git",
+        "level": "Básico",
+        "icon": "assets/images/icon/git.svg"
+    },
+    {
+        "name": "Github",
+        "level":"Básico",
+        "icon": "assets/images/github.svg"
+    }
+]

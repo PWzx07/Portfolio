@@ -1,0 +1,6 @@
+/* Reset básico para garantir um layout consistente */
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho dos elementos */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove as margens padrão */
+}

@@ -1,0 +1,112 @@
+<!-- Estrutura básica do HTML -->
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <!-- Importando arquivos CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- Ícone da aba do navegador -->
+  <link rel="shortcut icon" href="./assets/images/icon/favicon/portfolio.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav>
+      <p id="title">Dev. Pedro</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#ability">Habilidades</a></li>
+        <li><a href="#project">Projetos</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contacts">Contatos</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Seção Home -->
+    <section id="home">
+      <article id="centerProfile">
+        <img id="profile" src="./assets/images/perfil.png" alt="">
+      </article>
+      <h1>Pedro W.</h1>
+      <article>
+        <p>Desenvolvedor Web fullstack e free-lancer</p>
+      </article>
+    </section>
+    
+    <!-- Seção Sobre -->
+    <section id="about">
+      <article id="aboutContent">
+        <img id="aboutProfile" src="./assets/images/perfil.png" alt="Foto de perfil" width="250px">
+      </article>
+      <article>
+        <h2>Sobre mim</h2>
+        <p>Estudante de Programação de 17 anos, dedicado <br> a aprimorar minhas habilidades e contribuir significativamente para <br> as empresas em que atuarei no futuro.</p>
+      </article>
+    </section>
+    
+    <!-- Seção Habilidades -->
+    <section id="ability">
+      <div id="titleAbility">
+        <h2>Habilidades</h2>
+      </div>
+      <div id="skills-container"></div>
+    </section>
+    
+    <!-- Seção Projetos -->
+    <section id="project">
+      <h2 id="titleProj">Projetos</h2>
+      <a id="apiLink" href="http://localhost:3100/users" target="_blank" rel="noopener noreferrer">
+        <article class="api">
+          <img id="api-img" src="./assets/images/Captura de tela 2025-04-02 185800.png" alt="Imagem da API">
+          <p>API com JSON</p>
+        </article>
+      </a>      
+      <article class="api">
+        <p>Em andamento</p>
+      </article>
+    </section>
+    
+    <!-- Seção Serviços -->
+    <section id="services">
+      <h2>Serviços</h2>
+      <article class="card">
+        <img class="imgs" src="./assets/images/computador-portatil.png" alt="">
+        <p>Criação de Páginas Web</p>
+      </article>
+      <article class="card">
+        <img class="imgs" src="./assets/images/manutencao.png" alt="">
+        <p>Manutenção e Ajustes</p>
+      </article>
+      <article class="card">
+        <img class="imgs" src="./assets/images/landing-page.png" alt="">
+        <p>Landing Pages</p>
+      </article>
+      <article class="card">
+        <img class="imgs" src="./assets/images/cadastre-se.png" alt="">
+        <p>Formulários Interativos</p>
+      </article>
+      <article class="card">
+        <img class="imgs" src="./assets/images/conteudo-do-site.png" alt="">
+        <p>Publicação de Sites</p>
+      </article>
+    </section>
+    
+    <!-- Rodapé / Contatos -->
+    <footer id="contacts">
+      <ul>
+        <li>
+          <a class="link" href="https://www.linkedin.com/in/pedro-w-a52125324/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+        </li>
+        <li>
+          <a class="link" href="https://github.com/PWzx07" target="_blank" rel="noopener noreferrer">Github</a>
+      </li>
+      </ul>
+    </footer>
+
+    <!-- Importando o arquivo de scripts -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

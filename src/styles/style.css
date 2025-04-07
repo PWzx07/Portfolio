@@ -1,0 +1,261 @@
+/* Definição de variáveis globais para as cores do projeto */
+:root {
+    --primeiraCor: #0d0f36;
+    --segundaCor: #294380;
+    --terceiraCor: #69d2cd;
+    --quartaCor: #b9f1d6;
+    --quintaCor: #f1f6ce;
+    --devPedro: #ffb969; /* Cor específica para o título */
+}
+
+/* Estilização geral do corpo da página */
+body {
+    color: var(--quintaCor);
+    padding-top: 3rem;
+}
+
+/* Estilização da barra de navegação */
+nav {
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    padding: 0.4rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primeiraCor);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Links de navegação */
+a {
+    color: var(--quintaCor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--devPedro);
+}
+
+li {
+    list-style: none;
+}
+
+/* Título do site */
+#title {
+    color: var(--devPedro);
+    font-size: 1.7rem;
+}
+
+#title:hover {
+    color: aliceblue;
+}
+
+/* Seção Home */
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primeiraCor);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(63, 62, 62, 0.555);
+    z-index: -1;
+}
+
+/* Seção Sobre */
+#about {
+    background-color: var(--segundaCor);
+    width: 100%;
+    height: 100vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutcontent {
+    display: flex;
+    align-items: center;
+    border: solid black 1rem;
+}
+
+#aboutProfile {
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#centerProfile {
+    display: flex;
+    justify-content: center;
+}
+
+#profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Seção Habilidades */
+#ability {
+    background-color: var(--terceiraCor);
+    color: var(--primeiraCor);
+    width: 100%;
+    height: 100vh;
+}
+
+#titleAbility {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 7rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--quartaCor);
+    width: 15rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.icons {
+    width: 100px;
+    height: 100px;
+}
+
+/* Seção Projetos */
+#project {
+    background-color: var(--segundaCor);
+    color: var(--primeiraCor);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#titleProj {
+    display: flex;
+    position: relative;
+    bottom: 15rem;
+    left: 32.5rem;
+    color: var(--quintaCor);
+}
+
+.api {
+    background-color: var(--quintaCor);
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+#apiLink {
+    color: var(--devPedro);
+}
+
+#apiLink:hover {
+    color: var(--terceiraCor);
+}
+
+#api-img {
+    width: 25rem;
+    height: 15rem;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+/* Seção Serviços */
+#services {
+    background-color: var(--terceiraCor);
+    color: var(--primeiraCor);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: var(--quintaCor);
+    width: 14.5rem;
+    height: 15rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs {
+    width: 10rem;
+}
+
+/* Rodapé */
+#contacts {
+    background-color: var(--segundaCor);
+    padding: 0.5rem;
+    width: 100%;
+    height: 100vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+}
