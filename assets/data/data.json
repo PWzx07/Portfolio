@@ -12,7 +12,7 @@
     {
         "name": "JavaScript",
         "level": "Básico",
-        "icon":"assets/images/icon/javascript.png"
+        "icon":"assets/images/icon/javaScript.png"
     },
     {
         "name": "Python",
@@ -27,7 +27,7 @@
     {
         "name": "Node.Js",
         "level": "Básico",
-        "icon":"assets/images/icon/node-js.png"
+        "icon":"assets/images/icon/Node-js.png"
     },
     {
         "name": "Git",
