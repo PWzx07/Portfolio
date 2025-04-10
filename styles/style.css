@@ -270,11 +270,15 @@ li {
     margin: 0;
 }
 
-#aboutProfile{
+#footerProfile{
     border: 3px solid var(--terceiraCor);
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-#aboutProfile:hover{
+#footerProfile:hover{
     transform: scale(1.1);
     border: rgb(141, 36, 141);
     box-shadow: 0 0 15px rgb(141, 36, 141);
