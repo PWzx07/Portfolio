@@ -205,11 +205,11 @@ li {
 }
 
 #apiLink {
-    color: var(--devPedro);
+    color: rgb(141, 36, 141);
 }
 
 #apiLink:hover {
-    color: var(--terceiraCor);
+    color: var(--primeiraCor);
 }
 
 #api-img {
@@ -253,9 +253,66 @@ li {
 /* Rodapé */
 #contacts {
     background-color: var(--segundaCor);
-    padding: 0.5rem;
     width: 100%;
     height: 100vh;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+#contacts ul {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#aboutProfile{
+    border: 3px solid var(--terceiraCor);
+}
+
+#aboutProfile:hover{
+    transform: scale(1.1);
+    border: rgb(141, 36, 141);
+    box-shadow: 0 0 15px rgb(141, 36, 141);
+}
+
+#cardFooter{
+    position: relative;
+}
+
+#titleFooter{
+    position: absolute;
+    right: 25rem;
+    font-size: 5rem;
+    color: var(--terceiraCor);
+}
+
+#titleFooter:hover{
+    color: rgb(141, 36, 141);
+    transform: scale(1.1);
+    box-shadow:  rgb(141, 36, 141);
+}
+
+.link {
+    border-radius: 50%;
+    border: 3px solid var(--terceiraCor);
+    padding: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    border: rgb(141, 36, 141);
+    box-shadow: 0 0 15px rgb(141, 36, 141);
+}
+
+.link img {
+    width: 60px; /* Tamanho ajustado para ícones */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
 }
