@@ -1,125 +1,132 @@
 /* Definição de variáveis globais para as cores do projeto */
 :root {
-    --primeiraCor: #0d0f36;
-    --segundaCor: #294380;
-    --terceiraCor: #69d2cd;
-    --quartaCor: #b9f1d6;
-    --quintaCor: #f1f6ce;
-    --devPedro: #ffb969; /* Cor específica para o título */
+    --primeiraCor: #0d0f36;       /* Cor principal de fundo */
+    --segundaCor: #294380;        /* Cor secundária */
+    --terceiraCor: #69d2cd;       /* Cor terciária */
+    --quartaCor: #b9f1d6;         /* Cor de destaque */
+    --quintaCor: #f1f6ce;         /* Cor clara para texto */
+    --devPedro: #ffb969;          /* Cor especial para título */
 }
 
 /* Estilização geral do corpo da página */
 body {
-    color: var(--quintaCor);
-    padding-top: 3rem;
+    color: var(--quintaCor);      /* Define a cor padrão do texto */
+    padding-top: 3rem;            /* Espaçamento superior para compensar a navbar fixa */
 }
 
 /* Estilização da barra de navegação */
 nav {
-    top: 0;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    padding: 0.4rem;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--primeiraCor);
+    top: 0;                       /* Alinha ao topo da página */
+    position: fixed;             /* Fixa a barra no topo */
+    z-index: 1000;               /* Garante que fique acima de outros elementos */
+    width: 100%;                 /* Ocupa toda a largura */
+    display: flex;               /* Usa flexbox para layout */
+    padding: 0.4rem;             /* Espaçamento interno */
+    flex-direction: column;      /* Itens em coluna */
+    justify-content: center;     /* Centraliza verticalmente */
+    background-color: var(--primeiraCor); /* Cor de fundo da navbar */
 }
 
+/* Estilo da lista de navegação */
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;               /* Usa flexbox */
+    flex-direction: row;         /* Itens em linha */
+    justify-content: space-evenly; /* Espaça igualmente os itens */
+    align-items: center;         /* Alinha verticalmente */
 }
 
-/* Links de navegação */
+/* Estilo dos links */
 a {
-    color: var(--quintaCor);
-    text-decoration: none;
+    color: var(--quintaCor);     /* Cor dos links */
+    text-decoration: none;       /* Remove sublinhado */
 }
 
+/* Efeito hover nos links */
 a:hover {
-    color: var(--devPedro);
+    color: var(--devPedro);      /* Altera cor ao passar o mouse */
 }
 
+/* Remove marcadores de lista */
 li {
     list-style: none;
 }
 
-/* Título do site */
+/* Estilo do título do site */
 #title {
-    color: var(--devPedro);
-    font-size: 1.7rem;
+    color: var(--devPedro);      /* Cor do título */
+    font-size: 1.7rem;           /* Tamanho da fonte */
 }
 
+/* Hover no título */
 #title:hover {
-    color: aliceblue;
+    color: aliceblue;            /* Muda a cor ao passar o mouse */
 }
 
 /* Seção Home */
 #home {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--primeiraCor);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    position: relative;
+    width: 100%;                 /* Largura total */
+    height: 100vh;               /* Altura da tela inteira */
+    background-color: var(--primeiraCor); /* Fundo escuro */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+    font-size: 2rem;             /* Tamanho da fonte */
+    display: flex;               /* Usa flexbox */
+    flex-direction: column;      /* Alinha itens em coluna */
+    justify-content: center;     /* Centraliza verticalmente */
+    align-items: center;         /* Centraliza horizontalmente */
+    gap: 1rem;                   /* Espaçamento entre itens */
+    position: relative;          /* Necessário para ::before funcionar corretamente */
 }
 
+/* Sobreposição escura para a seção home */
 #home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(63, 62, 62, 0.555);
-    z-index: -1;
+    content: "";                 /* Conteúdo vazio */
+    position: absolute;          /* Sobreposição absoluta */
+    top: 0; left: 0;             /* Começa no canto superior esquerdo */
+    width: 100%; height: 100%;   /* Ocupa toda a seção */
+    background: rgba(63, 62, 62, 0.555); /* Cor semi-transparente */
+    z-index: -1;                 /* Fica atrás do conteúdo */
 }
 
 /* Seção Sobre */
 #about {
-    background-color: var(--segundaCor);
+    background-color: var(--segundaCor); /* Fundo da seção */
     width: 100%;
     height: 100vh;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 1.5rem;
-    gap: 2rem;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+    font-size: 1.5rem;           /* Tamanho da fonte */
+    gap: 2rem;                   /* Espaço entre itens */
+    display: flex;               /* Flexbox */
+    flex-direction: row-reverse;/* Inverte ordem dos itens */
+    align-items: center;        /* Alinhamento vertical */
+    justify-content: center;    /* Centraliza conteúdo */
 }
 
+/* Container de conteúdo da seção sobre */
 #aboutcontent {
-    display: flex;
-    align-items: center;
-    border: solid black 1rem;
+    display: flex;               /* Flexbox */
+    align-items: center;         /* Alinha ao centro */
+    border: solid black 1rem;    /* Borda grossa preta */
 }
 
+/* Imagem de perfil na seção sobre */
 #aboutProfile {
     height: 300px;
     width: 250px;
-    border-radius: 20px;
-    object-fit: cover;
+    border-radius: 20px;         /* Arredonda bordas */
+    object-fit: cover;           /* Mantém proporções */
 }
 
+/* Centraliza o perfil */
 #centerProfile {
     display: flex;
     justify-content: center;
 }
 
+/* Outra imagem de perfil com formato circular */
 #profile {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 50%;          /* Imagem circular */
     object-fit: cover;
 }
 
@@ -131,6 +138,7 @@ li {
     height: 100vh;
 }
 
+/* Título da seção de habilidades */
 #titleAbility {
     display: flex;
     justify-content: center;
@@ -138,6 +146,7 @@ li {
     padding: 10px;
 }
 
+/* Container para as habilidades */
 #skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -146,6 +155,7 @@ li {
     padding: 7rem;
 }
 
+/* Estilo de cada habilidade */
 .skill {
     display: flex;
     flex-direction: column;
@@ -160,11 +170,13 @@ li {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Efeito hover nas habilidades */
 .skill:hover {
-    transform: scale(1.1);
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);       /* Aumenta o tamanho */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
 }
 
+/* Ícones das habilidades */
 .icons {
     width: 100px;
     height: 100px;
@@ -183,6 +195,7 @@ li {
     gap: 1rem;
 }
 
+/* Título da seção de projetos */
 #titleProj {
     display: flex;
     position: relative;
@@ -191,6 +204,7 @@ li {
     color: var(--quintaCor);
 }
 
+/* Cartões de projeto */
 .prj {
     background-color: var(--quintaCor);
     width: 30rem;
@@ -204,14 +218,17 @@ li {
     font-size: 1.3rem;
 }
 
+/* Links dos projetos */
 .prjLink {
     color: rgb(141, 36, 141);
 }
 
+/* Hover no link dos projetos */
 .prjLink:hover {
     color: var(--primeiraCor);
 }
 
+/* Imagens dos projetos */
 .prj-img {
     width: 25rem;
     height: 15rem;
@@ -233,6 +250,7 @@ li {
     padding: 2rem;
 }
 
+/* Cartões de serviços */
 .card {
     background-color: var(--quintaCor);
     width: 14.5rem;
@@ -246,11 +264,12 @@ li {
     justify-content: center;
 }
 
+/* Imagens dos serviços */
 .imgs {
     width: 10rem;
 }
 
-/* Rodapé */
+/* Seção de Contato */
 #contacts {
     background-color: var(--segundaCor);
     width: 100%;
@@ -263,6 +282,7 @@ li {
     gap: 10rem;
 }
 
+/* Lista de ícones no rodapé */
 #contacts ul {
     display: flex;
     gap: 2rem;
@@ -270,7 +290,8 @@ li {
     margin: 0;
 }
 
-#footerProfile{
+/* Imagem de perfil no rodapé */
+#footerProfile {
     border: 3px solid var(--terceiraCor);
     height: 300px;
     width: 250px;
@@ -278,29 +299,34 @@ li {
     object-fit: cover;
 }
 
-#footerProfile:hover{
+/* Efeito hover no perfil do rodapé */
+#footerProfile:hover {
     transform: scale(1.1);
     border: rgb(141, 36, 141);
     box-shadow: 0 0 15px rgb(141, 36, 141);
 }
 
-#cardFooter{
+/* Container do título do rodapé */
+#cardFooter {
     position: relative;
 }
 
-#titleFooter{
+/* Título do rodapé */
+#titleFooter {
     position: absolute;
     right: 25rem;
     font-size: 5rem;
     color: var(--terceiraCor);
 }
 
-#titleFooter:hover{
+/* Hover do título no rodapé */
+#titleFooter:hover {
     color: rgb(141, 36, 141);
     transform: scale(1.1);
-    box-shadow:  rgb(141, 36, 141);
+    box-shadow: rgb(141, 36, 141);
 }
 
+/* Estilo dos links do rodapé (ícones) */
 .link {
     border-radius: 50%;
     border: 3px solid var(--terceiraCor);
@@ -308,14 +334,16 @@ li {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito hover dos links */
 .link:hover {
     transform: scale(1.1);
     border: rgb(141, 36, 141);
     box-shadow: 0 0 15px rgb(141, 36, 141);
 }
 
+/* Estilo da imagem dentro do link */
 .link img {
-    width: 60px; /* Tamanho ajustado para ícones */
+    width: 60px;
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
