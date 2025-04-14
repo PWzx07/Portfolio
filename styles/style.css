@@ -191,7 +191,7 @@ li {
     color: var(--quintaCor);
 }
 
-.api {
+.prj {
     background-color: var(--quintaCor);
     width: 30rem;
     height: 20rem;
@@ -204,15 +204,15 @@ li {
     font-size: 1.3rem;
 }
 
-#apiLink {
+.prjLink {
     color: rgb(141, 36, 141);
 }
 
-#apiLink:hover {
+.prjLink:hover {
     color: var(--primeiraCor);
 }
 
-#api-img {
+.prj-img {
     width: 25rem;
     height: 15rem;
     border-radius: 25px;
