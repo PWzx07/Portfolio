@@ -1,131 +1,147 @@
 <!-- Estrutura básica do HTML -->
-<!DOCTYPE html>
-<html lang="PT-br">
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="PT-br"> <!-- Define o idioma da página como português do Brasil -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+  <title>Portfólio</title> <!-- Título que aparece na aba do navegador -->
+
   <!-- Importando arquivos CSS -->
-  <link rel="stylesheet" href="./styles/reset.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/reset.css"> <!-- CSS de reset para remover estilos padrão dos navegadores -->
+  <link rel="stylesheet" href="./styles/style.css"> <!-- Arquivo principal de estilos -->
+
   <!-- Ícone da aba do navegador -->
   <link rel="shortcut icon" href="./assets/images/icon/favicon/portfolio.png" type="image/x-icon">
 </head>
-<body>
-    <!-- Barra de navegação -->
-    <nav>
-      <p id="title">Dev. Pedro</p>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#ability">Habilidades</a></li>
-        <li><a href="#project">Projetos</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#contacts">Contatos</a></li>
-      </ul>
-    </nav>
-    
-    <!-- Seção Home -->
-    <section id="home">
-      <article id="centerProfile">
-        <img id="profile" src="./assets/images/perfil.png" alt="">
-      </article>
-      <h1>Pedro W.</h1>
-      <article>
-        <p>Desenvolvedor Web fullstack e free-lancer</p>
-      </article>
-    </section>
-    
-    <!-- Seção Sobre -->
-    <section id="about">
-      <article id="aboutContent">
-        <img id="aboutProfile" src="./assets/images/perfil.png" alt="Foto de perfil" width="250px">
-      </article>
-      <article>
-        <h2>Sobre mim</h2>
-        <p>Estudante de Programação de 17 anos, dedicado <br> a aprimorar minhas habilidades e contribuir significativamente para <br> as empresas em que atuarei no futuro.</p>
-      </article>
-    </section>
-    
-    <!-- Seção Habilidades -->
-    <section id="ability">
-      <div id="titleAbility">
-        <h2>Habilidades</h2>
-      </div>
-      <div id="skills-container"></div>
-    </section>
-    
-    <!-- Seção Projetos -->
-    <section id="project">
-      <h2 id="titleProj">Projetos</h2>
-      <a class="prjLink" href="http://localhost:3100/users" target="_blank" rel="noopener noreferrer">
-        <article class="prj">
-          <img class="prj-img" src="./assets/images/Captura de tela 2025-04-02 185800.png" alt="Imagem da API">
-          <p>API com JSON</p>
-        </article>
-      </a>
-      <a class="prjLink" href="https://github.com/PWzx07/Form.git" target="_blank" rel="noopener noreferrer">
-        <article class="prj">
-          <img src="./assets/images/Captura de tela 2025-04-14 205149.png" alt="" class="prj-img">
-          <p>Formulário de Cadastro</p>
-        </article>
-      </a>      
-      <article class="prj">
-        <p>Em andamento</p>
-      </article>
-    </section>
-    
-    <!-- Seção Serviços -->
-    <section id="services">
-      <h2>Serviços</h2>
-      <article class="card">
-        <img class="imgs" src="./assets/images/computador-portatil.png" alt="">
-        <p>Criação de Páginas Web</p>
-      </article>
-      <article class="card">
-        <img class="imgs" src="./assets/images/manutencao.png" alt="">
-        <p>Manutenção e Ajustes</p>
-      </article>
-      <article class="card">
-        <img class="imgs" src="./assets/images/landing-page.png" alt="">
-        <p>Landing Pages</p>
-      </article>
-      <article class="card">
-        <img class="imgs" src="./assets/images/cadastre-se.png" alt="">
-        <p>Formulários Interativos</p>
-      </article>
-      <article class="card">
-        <img class="imgs" src="./assets/images/conteudo-do-site.png" alt="">
-        <p>Publicação de Sites</p>
-      </article>
-    </section>
-    
-    <!-- Rodapé / Contatos -->
-    <footer id="contacts">
-      <ul>
-        <li class="link">
-          <a  href="https://www.linkedin.com/in/pedro-w-a52125324/" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/images/linkedin.png" alt="" width="90px">
-          </a>
-        </li>
-        <li class="link">
-          <a href="https://www.instagram.com/pedro_w.07/" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/images/insta.png" alt="" srcset="" width="90px">
-          </a>
-        </li>
-        <li class="link">
-          <a  href="https://github.com/PWzx07" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/images/github.png" alt="" width="90px">
-          </a>
-      </li>
-      </ul>
-      <article id="cardFooter">
-        <h2 id="titleFooter">Dev.Pedro</h2>
-        <img id="footerProfile" src="./assets/images/perfil.png" alt="Foto de perfil" width="250px">
-      </article>
-    </footer>
 
-    <!-- Importando o arquivo de scripts -->
-    <script src="./js/script.js"></script>
+<body>
+  <!-- Barra de navegação -->
+  <nav>
+    <p id="title">Dev. Pedro</p> <!-- Título ou logo do site -->
+    <ul> <!-- Lista de navegação -->
+      <li><a href="#home">Home</a></li> <!-- Link âncora para a seção Home -->
+      <li><a href="#about">Sobre</a></li> <!-- Link âncora para a seção Sobre -->
+      <li><a href="#ability">Habilidades</a></li> <!-- Link âncora para a seção Habilidades -->
+      <li><a href="#project">Projetos</a></li> <!-- Link âncora para a seção Projetos -->
+      <li><a href="#services">Serviços</a></li> <!-- Link âncora para a seção Serviços -->
+      <li><a href="#contacts">Contatos</a></li> <!-- Link âncora para a seção Contatos -->
+    </ul>
+  </nav>
+
+  <!-- Seção Home -->
+  <section id="home">
+    <article id="centerProfile"> <!-- Container para centralizar a imagem de perfil -->
+      <img id="profile" src="./assets/images/perfil.png" alt=""> <!-- Imagem de perfil -->
+    </article>
+    <h1>Pedro W.</h1> <!-- Nome principal em destaque -->
+    <article>
+      <p>Desenvolvedor Web fullstack e free-lancer</p> <!-- Descrição da profissão -->
+    </article>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="about">
+    <article id="aboutContent"> <!-- Conteúdo com a imagem de perfil -->
+      <img id="aboutProfile" src="./assets/images/perfil.png" alt="Foto de perfil" width="250px">
+    </article>
+    <article> <!-- Texto descritivo -->
+      <h2>Sobre mim</h2>
+      <p>Estudante de Programação de 17 anos, dedicado <br>
+         a aprimorar minhas habilidades e contribuir significativamente para <br>
+         as empresas em que atuarei no futuro.</p>
+    </article>
+  </section>
+
+  <!-- Seção Habilidades -->
+  <section id="ability">
+    <div id="titleAbility"> <!-- Título da seção -->
+      <h2>Habilidades</h2>
+    </div>
+    <div id="skills-container"></div> <!-- Container para inserir habilidades via JavaScript -->
+  </section>
+
+  <!-- Seção Projetos -->
+  <section id="project">
+    <h2 id="titleProj">Projetos</h2> <!-- Título da seção -->
+    
+    <!-- Projeto 1 -->
+    <a class="prjLink" href="http://localhost:3100/users" target="_blank" rel="noopener noreferrer">
+      <article class="prj">
+        <img class="prj-img" src="./assets/images/Captura de tela 2025-04-02 185800.png" alt="Imagem da API">
+        <p>API com JSON</p>
+      </article>
+    </a>
+
+    <!-- Projeto 2 -->
+    <a class="prjLink" href="https://github.com/PWzx07/Form.git" target="_blank" rel="noopener noreferrer">
+      <article class="prj">
+        <img src="./assets/images/Captura de tela 2025-04-14 205149.png" alt="" class="prj-img">
+        <p>Formulário de Cadastro</p>
+      </article>
+    </a>
+
+    <!-- Projeto placeholder -->
+    <article class="prj">
+      <p>Em andamento</p> <!-- Indica que um projeto ainda está sendo desenvolvido -->
+    </article>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="services">
+    <h2>Serviços</h2> <!-- Título da seção -->
+
+    <!-- Cada card representa um serviço oferecido -->
+    <article class="card">
+      <img class="imgs" src="./assets/images/computador-portatil.png" alt="">
+      <p>Criação de Páginas Web</p>
+    </article>
+    <article class="card">
+      <img class="imgs" src="./assets/images/manutencao.png" alt="">
+      <p>Manutenção e Ajustes</p>
+    </article>
+    <article class="card">
+      <img class="imgs" src="./assets/images/landing-page.png" alt="">
+      <p>Landing Pages</p>
+    </article>
+    <article class="card">
+      <img class="imgs" src="./assets/images/cadastre-se.png" alt="">
+      <p>Formulários Interativos</p>
+    </article>
+    <article class="card">
+      <img class="imgs" src="./assets/images/conteudo-do-site.png" alt="">
+      <p>Publicação de Sites</p>
+    </article>
+  </section>
+
+  <!-- Rodapé / Contatos -->
+  <footer id="contacts">
+    <ul> <!-- Ícones sociais -->
+      <li class="link">
+        <a href="https://www.linkedin.com/in/pedro-w-a52125324/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/linkedin.png" alt="" width="90px">
+        </a>
+      </li>
+      <li class="link">
+        <a href="https://www.instagram.com/pedro_w.07/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/insta.png" alt="" width="90px">
+        </a>
+      </li>
+      <li class="link">
+        <a href="https://github.com/PWzx07" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/github.png" alt="" width="90px">
+        </a>
+      </li>
+    </ul>
+
+    <!-- Nome e imagem de perfil no rodapé -->
+    <article id="cardFooter">
+      <h2 id="titleFooter">Dev.Pedro</h2>
+      <img id="footerProfile" src="./assets/images/perfil.png" alt="Foto de perfil" width="250px">
+    </article>
+  </footer>
+
+  <!-- Importando o arquivo de scripts -->
+  <script src="./js/script.js"></script> <!-- Arquivo JavaScript com funcionalidades -->
 </body>
 </html>
