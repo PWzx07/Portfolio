@@ -102,10 +102,10 @@ li {
 }
 
 /* Container de conteúdo da seção sobre */
-#aboutcontent {
+#aboutContent {
     display: flex;               /* Flexbox */
     align-items: center;         /* Alinha ao centro */
-    border: solid black 1rem;    /* Borda grossa preta */
+    border: solid black 1px;    /* Borda grossa preta */
 }
 
 /* Imagem de perfil na seção sobre */
@@ -347,4 +347,145 @@ li {
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+/* Responsividades */
+
+@media (max-width:  834px) {
+    body{
+        font-size: 2rem;
+    }
+
+    nav{
+        top: 0;                       /* Alinha ao topo da página */           
+        width: 100%;                 /* Ocupa toda a largura */
+        display: flex;               /* Usa flexbox para layout */
+        padding: 0.4rem;             /* Espaçamento interno */
+        flex-direction: column;      /* Itens em coluna */
+        justify-content: center;     /* Centraliza verticalmente */
+        background-color: var(--primeiraCor); /* Cor de fundo da navbar */
+    }
+
+    #home {
+        width: 100%;                 /* Largura total */
+        height: 130vh;               /* Altura da tela inteira */
+        background-color: var(--primeiraCor); /* Fundo escuro */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+        font-size: 2.5rem;             /* Tamanho da fonte */
+        display: flex;               /* Usa flexbox */
+        flex-direction: column;      /* Alinha itens em coluna */
+        justify-content: center;     /* Centraliza verticalmente */
+        align-items: center;         /* Centraliza horizontalmente */
+        gap: 1rem;                   /* Espaçamento entre itens */
+        position: relative;          /* Necessário para ::before funcionar corretamente */
+    }
+
+    #home::before {
+        content: "";                 /* Conteúdo vazio */
+        position: absolute;          /* Sobreposição absoluta */
+        top: 0; left: 0;             /* Começa no canto superior esquerdo */
+        width: 100%; 
+        height: 130vh;   /* Ocupa toda a seção */
+        background: rgba(63, 62, 62, 0.555); /* Cor semi-transparente */
+        z-index: -1;                 /* Fica atrás do conteúdo */
+    }
+
+    #about {
+        background-color: var(--segundaCor); /* Fundo da seção */
+        width: 100%;
+        height: 130vh;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+        font-size: 2rem;           /* Tamanho da fonte */
+        gap: 1.5rem;                   /* Espaço entre itens */
+        display: flex;               /* Flexbox */
+        flex-direction: column;/* Inverte ordem dos itens */
+        align-items: center;        /* Alinhamento vertical */
+        justify-content: center;    /* Centraliza conteúdo */
+        text-align: center;
+    }
+
+    #ability {
+        background-color: var(--terceiraCor);
+        color: var(--primeiraCor);
+        width: 100%;
+        height: 130vh;
+    }
+
+    #project {
+        background-color: var(--segundaCor);
+        color: var(--primeiraCor);
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+ 
+    .prj {
+        background-color: var(--quintaCor);
+        width: 30rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+
+    /* Seção Serviços */
+    #services {
+        background-color: var(--terceiraCor);
+        color: var(--primeiraCor);
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .card {
+        background-color: var(--quintaCor);
+        width: 16.5rem;
+        height: 17rem;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contacts {
+        background-color: var(--segundaCor);
+        width: 100%;
+        height: 130vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .link {
+        border-radius: 50%;
+        border: 3px solid var(--terceiraCor);
+        padding: 0rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #titleFooter {
+        position: absolute;
+        right: 20rem;
+        font-size: 5rem;
+        color: var(--terceiraCor);
+    }
 }
